@@ -57,6 +57,8 @@
     text-transform: uppercase;
     border: 3px solid #1b3c59;
     color: #1b3c59;
+    background-color: #f5f5f5;
+    z-index: 1;
     font-size: 20px;
     line-height: 70px;
     text-align: center;
@@ -267,10 +269,11 @@ SVOGLIMENTO
 .hint {
     position: absolute;
     left: 20px;
-    bottom: calc(50% - 10px);
+    transform: translateY(-50%);
+    top: 50%;
     font-size: 18px;
     opacity: 0;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .ex-13-button {
@@ -286,7 +289,7 @@ SVOGLIMENTO
 }
 
 .well.special:hover .ex-13-button {
-    transform: translate(520px, 0px)
+    transform: translate(570px, 0px)
 }
 
 .well.special:hover .ex-13-top-white {
